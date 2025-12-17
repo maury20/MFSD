@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Atleta</title>
+    <style>
+        /* CSS - O Estilo do Site */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f4f4; }
+        
+        /* Cabeçalho de Impacto */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1541252260730-0412e8e2108e?auto=format&fit=crop&w=1350&q=80'); 
+            height: 400px; background-size: cover; background-position: center;
+            display: flex; align-items: flex-end; color: white; padding: 40px;
+        }
+
+        .hero-content h1 { font-size: 3rem; margin: 0; text-transform: uppercase; }
+
+        /* Conteúdo Principal */
+        .container { max-width: 1000px; margin: -50px auto 0; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+        .info-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin-top: 20px; }
+
+        .stats { background: #0081C8; color: white; padding: 20px; border-radius: 8px; text-align: center; }
+        
+        .medal-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .medal-table th { background: #eee; text-align: left; padding: 12px; }
+        .medal-table td { padding: 12px; border-bottom: 1px solid #ddd; }
+
+        .medal-gold { color: #d4af37; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p>ATLETA</p>
+            <h1>ISAQUIAS QUEIROZ</h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="info-grid">
+            <aside>
+                <div class="stats">
+                    <h2>5</h2>
+                    <p>Medalhas Olímpicas</p>
+                </div>
+                <p><strong>Nascimento:</strong> 03/01/1994</p>
+                <p><strong>País:</strong> Brasil 🇧🇷</p>
+            </aside>
+
+            <main>
+                <h2>Biografia</h2>
+                <p>Isaquias Queiroz é um canoísta brasileiro, campeão olímpico e mundial. Ele é o primeiro atleta brasileiro a conquistar três medalhas em uma única edição dos Jogos Olímpicos.</p>
+                
+                <h3>Conquistas Recentes</h3>
+                <table class="medal-table">
+                    <thead>
+                        <tr>
+                            <th>Edição</th>
+                            <th>Prova</th>
+                            <th>Medalha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tóquio 2020</td>
+                            <td>C1 1000m</td>
+                            <td class="medal-gold">Ouro</td>
+                        </tr>
+                        <tr>
+                            <td>Rio 2016</td>
+                            <td>C1 1000m</td>
+                            <td>Prata</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
